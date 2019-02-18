@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://www.springframework.org/schema/beans
+ http://www.springframework.org/schema/beans/spring-beans.xsd">
+ 	<bean id="myCountry" class="com.geo.Country">
+ 		<property name="code" value="IND"/>
+ 		<property name="name" value="India"/>
+ 		<property name="states">
+ 			<list>
+ 				<value>MH</value>
+ 				<value>WB</value>
+ 				<value>MP</value>
+ 				<value>UP</value> 				
+ 			</list>
+ 		</property>
+ 	</bean>
+	<bean id="film1" class="com.bollywood.Film">
+		<property name="id" value="1"/>
+		<property name="title" value="3 Idiots"/>
+		<property name="actors">
+			<list>
+				<value>Aamir Khan</value>
+				<value>R. Madhavan</value>
+				<value>Sharman Joshi</value>
+				<value>Kareena Kapoor</value>
+			</list>
+		</property>
+		<property name="songs">
+			<list>
+				<ref bean="song1"/>
+				<ref bean="song2"/>
+				<ref bean="song3"/>
+			</list>
+		</property>
+		<property name="details">
+			<map>
+				<entry key="director" value="R. Hirani"/>
+				<entry key="descr" value="A film based on Novel written by Mr. Chetan Bhagat"/>
+			</map>			
+		</property>
+		<!-- <property name="details">
+			<props>
+				<prop key="director">R. Hirani</prop>
+				<prop key="descr">A film based on Novel written by Mr. Chetan Bhagat</prop>
+			</props>			
+		</property> -->
+	</bean>
+	<bean id="song1" class="com.bollywood.Song">
+		<property name="title" value="Give me some sunshine"/>
+		<property name="type" value="Solo with Chorus"/>
+	</bean>
+	<bean id="song2" class="com.bollywood.Song">
+		<property name="title" value="Zubi Zubi"/>
+		<property name="type" value="Duet"/>
+	</bean>
+	<bean id="song3" class="com.bollywood.Song">
+		<property name="title" value="Behti Hawa"/>
+		<property name="type" value="Solo"/>
+	</bean>
+	
+</beans>

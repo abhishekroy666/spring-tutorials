@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://www.springframework.org/schema/beans
+ http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<bean id="p1" class="com.game.Player" abstract="true">
+		<property name="name" value="Sachin T"/>
+		<property name="age" value="38"/>
+	</bean>
+	<bean id="p2" class="com.game.Player">
+		<property name="name" value="Brian Lara"/>
+		<property name="age" value="42"/>
+	</bean>
+	<bean id="cp" class="com.game.CricketPlayer" parent="p1">
+		<property name="runs" value="18325"/>
+		<property name="wkts" value="230"/>
+	</bean>
+</beans>

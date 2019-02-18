@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns:context="http://www.springframework.org/schema/context"
+ xsi:schemaLocation="http://www.springframework.org/schema/beans
+ http://www.springframework.org/schema/beans/spring-beans.xsd
+ http://www.springframework.org/schema/context
+  http://www.springframework.org/schema/context/spring-context.xsd">
+ 	<context:annotation-config/>
+ 	<bean id="emp1" class="com.hr.Employee">
+		<property name="empId" value="1001"/>
+		<property name="name" value="Rahul Barve"/>
+		<property name="sal" value="10000"/>		
+	</bean>
+	<bean id="homeAddress" class="com.hr.Address" name="address">
+		<property name="city" value="Pune"/>
+		<property name="state" value="MH"/>
+		<property name="zip" value="411038"/>
+	</bean>
+	<bean id="contactDetails" class="com.hr.Contact" name="contact">
+		<property name="email" value="rahulbarve1979@gmail.com"/>
+		<property name="mobile" value="+918669887867"/>
+	</bean>	
+</beans>

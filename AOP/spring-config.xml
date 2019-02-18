@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+ xmlns:aop="http://www.springframework.org/schema/aop"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://www.springframework.org/schema/beans
+ http://www.springframework.org/schema/beans/spring-beans-4.3.xsd
+ http://www.springframework.org/schema/aop
+ http://www.springframework.org/schema/aop/spring-aop-4.3.xsd">
+ 	<aop:config>
+ 		<aop:aspect ref="advice">
+ 			<aop:before 
+ 			pointcut="execution(* com.aop.Performer.perform(..))"
+ 			 method="takeSeats"/>
+ 			<aop:before 
+ 			pointcut="execution(* com.aop.Performer.perform(..))"
+ 			 method="turnOffCellPhones"/>
+ 			<aop:after-returning 
+ 			pointcut="execution(* com.aop.Instrumentalist.perform(..))" 
+ 			method="clap"/>
+ 			<aop:after pointcut="execution(* com.aop.Instrumentalist.perform(..))"
+ 			 method="goHome"/>
+ 			<aop:after-throwing pointcut="execution(* com.aop.Instrumentalist.perform(..))"
+ 			 method="demandRefund"/>
+ 		</aop:aspect>
+ 	</aop:config>
+ 	<bean id="advice" class="com.aop.Audience"/> 	
+ 	<bean id="myInstrumentalist" class="com.aop.Instrumentalist"/>
+ 	<bean id="mySinger" class="com.aop.Singer"/>
+ </beans>
+	
+	
+	
+	<!-- Proxy Generation using Inheritance
+		class Instrumentalist impl Performer {
+			perform() {
+			
+			}
+		}
+		
+		
+		class InstrumentalistProxy extends Instrumentalist {
+			perform(){
+				takeSeats();
+				turnOffMobile();
+				super.perform();
+			}
+		}
+		
+		Proxy Generation using Composition
+		class Instrumentalist impl Performer {
+			perform() {
+			
+			}
+		}
+		
+		class InstrumentalistProxy implements Performer {
+			Instrumentalist in;
+			perform(){
+				takeSeats();
+				turnOffMobile();
+				in.perform();
+			}
+		}
+		
+		
+		
+	 -->
+	
+	
+	
+	

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://www.springframework.org/schema/beans
+ http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<bean id="serviceUser" class="com.greeting.GreetingServiceUser">
+		<property name="greetingService" ref="helloService"/>		
+	</bean>
+	<bean id="helloService" class="com.greeting.HelloGreetingService">
+	</bean>
+	<bean id="welcomeService" class="com.greeting.WelcomeGreetingService">
+	</bean>
+	
+</beans>

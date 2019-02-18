@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://www.springframework.org/schema/beans
+ http://www.springframework.org/schema/beans/spring-beans.xsd">
+ 	<bean id="newMyReplacer" class="com.greeting.MyReplacer"/>
+	<bean id="bean1" class="com.greeting.GreetingServiceImpl">
+		<replaced-method name="sayGreeting" replacer="newMyReplacer">
+			<arg-type>java.lang.String</arg-type>
+			<arg-type>java.lang.String</arg-type>
+		</replaced-method>		
+	</bean>
+	<bean id="bean2" class="com.greeting.GreetingServiceImpl"/>
+	
+	
+</beans>
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://www.springframework.org/schema/beans
+ http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<bean id="emp1" class="com.hr.Employee">
+		<constructor-arg value="1001"/>
+		<constructor-arg value="James"/>
+		<constructor-arg value="20000"/>
+		<!--  <constructor-arg ref="officeAddress"> -->
+		<constructor-arg>
+			<ref bean="officeAddress"/>
+		</constructor-arg>
+	</bean>
+	<bean id="emp2" class="com.hr.Employee">
+		<property name="empId" value="1002"/>
+		<property name="name" value="Rod Johnson"/>
+		<property name="sal" value="25000"/>
+		<property name="address" ref="homeAddress"/>
+	</bean>
+	<bean id="homeAddress" class="com.hr.Address">
+		<property name="city" value="Pune"/>
+		<property name="state" value="MH"/>
+		<property name="zip" value="411038"/>
+	</bean>
+	<bean id="officeAddress" class="com.hr.Address">
+		<property name="city" value="Mumbai"/>
+		<property name="state" value="MH"/>
+		<property name="zip" value="411038"/>
+	</bean>
+</beans>

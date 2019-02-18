@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://www.springframework.org/schema/beans
+ http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+	<bean id="emp1" class="com.hr.Employee" autowire="constructor">
+		<constructor-arg value="1001" index="0"/>
+		<constructor-arg value="Rahul Barve" index="1"/>
+		<constructor-arg value="10000" index="2"/> 
+		 	
+	</bean>
+	<bean  class="com.hr.Contact">
+		<property name="email" value="rahulbarve1979@gmail.com"/>
+		<property name="mobile" value="+918669887867"/>
+	</bean>
+	<bean class="com.hr.Address">
+		<property name="city" value="Pune"/>
+		<property name="state" value="MH"/>
+		<property name="zip" value="411038"/>
+	</bean>		
+</beans>
