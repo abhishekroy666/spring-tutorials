@@ -1,0 +1,46 @@
+div#heading{
+	text-align: center;
+	font-size: 20px;
+}
+div#profileBody{
+	margin-top: 3%;
+	margin-left: 35%;
+}
+::-webkit-input-placeholder {
+	color: olive;
+}
+table,tr,td{
+	padding:2%;
+}
+.textField {
+	background: transparent;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	outline: none;
+	font-size: 10px;
+}
+
+.textField:Focus {
+	border: 1px solid navy;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	outline: none;
+}
+.submitButton {
+	border: none;
+	padding: 10px;
+	width: auto;
+	background: cornflowerblue;
+	color: azure;
+	border-radius: 15px;
+	height:auto;
+}
+
+
+.submitButton:hover {
+	border: 1px solid cornflowerblue;
+	background: azure;
+	color: cornflowerblue;
+}

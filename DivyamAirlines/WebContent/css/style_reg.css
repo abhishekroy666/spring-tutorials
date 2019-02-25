@@ -1,0 +1,68 @@
+div#header{
+    height:150px;
+    background: darkslateblue ;
+}
+
+div#footer{
+    height:70px;
+    background: darkslateblue;
+    margin-top:50px;
+}
+
+h2{
+    font-family: Helvetica;
+    margin-left:20px;
+}
+
+div#body{
+    margin-left: 300px;
+}
+
+div#desc{
+    float:left;
+    position: relative;
+    margin-top:90px;
+    margin-left:15px;
+    width:50%;
+    font-family: Helvetica;
+    text-align: justify;
+}
+
+div#login{
+    float:right;
+    position: relative;
+    margin-top:90px;
+    width:40%;
+    text-align: center;
+}
+
+table,tr,td{
+    padding: 10px;
+    font-family: Helvetica;
+}
+
+input#register{
+    position: absolute;
+    margin-left: 120px;
+    border:1px solid darkgreen;
+    padding:10px;
+    width:100px;
+    background:azure;
+    color:darkgreen;
+}
+
+input#register:hover{
+    position: absolute;
+    margin-left: 120px;
+    border:1px solid azure;
+    padding:10px;
+    width:100px;
+    background:darkseagreen;
+    color:azure;
+}
+
+input.text{
+    border-top: none;
+    border-left:none;
+    border-right:none;
+}

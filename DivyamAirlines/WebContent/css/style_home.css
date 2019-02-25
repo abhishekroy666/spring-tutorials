@@ -1,0 +1,60 @@
+div#header{
+    height:150px;
+    background: darkslateblue;
+}
+
+div#footer{
+    height:70px;
+    background: darkslateblue;
+    margin-top: 435px;
+}
+
+div#menu{
+    position:relative;
+    float:left;
+    height:435px;
+    width:200px;
+    background: azure; 
+}
+
+div.menubutton{
+    position: relative;
+    margin: 5px;
+    margin-left:20px;
+    border:1px solid azure;
+    padding: 10px;
+    background: azure;
+    
+    font-family: sans-serif;
+    font-kerning: normal;
+    text-align: left;
+}
+
+div.menubutton:hover{    
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+a{
+    text-decoration: none;
+    font-family: sans-serif;
+    color:darkcyan;
+}
+a:hover{
+    text-decoration: none;
+    font-family: sans-serif;
+    color:blueviolet;
+}
+
+div#main{
+    margin-right:4px;
+    float:right;
+    width:737px;
+    height:430px;    
+}
+
+iframe#mainframe{
+    border:none;
+}
+
+

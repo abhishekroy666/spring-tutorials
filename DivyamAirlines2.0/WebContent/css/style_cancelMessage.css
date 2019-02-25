@@ -1,0 +1,24 @@
+
+table{
+	margin-top: 5%;
+	margin-left : 5%;
+}
+table,tr,td,th{
+	padding:5px;
+	
+}
+.menuTab {
+	border: none;
+	width: auto;
+	background: transparent;
+	color: midnightblue;
+	font-size: medium;
+	outline: none;
+	margin-top:10%;
+	margin-left: 150px;
+	text-decoration: none;
+}
+
+.menuTab:hover {
+	color: cornflowerblue;
+}

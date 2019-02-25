@@ -1,0 +1,63 @@
+div#heading{
+	text-align: center;
+	font-size: 20px;
+	
+}
+
+::-webkit-input-placeholder {
+	color: olive;
+}
+th{
+
+	border-bottom: 2px solid #408080;
+}
+table{
+	margin-top: 7%;
+}
+table,tr,td,th{
+	padding:5px;
+	text-align: center;
+	
+}
+form{
+	margin-top: 5%;
+}
+div#noBooking{
+	margin-top:100px;
+	text-align:center;	
+}
+.textField {
+	background: transparent;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	outline: none;
+	font-size: 12px;
+}
+
+.textField:Focus {
+	border: 1px solid navy;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	outline: none;
+}
+.submitButton {
+	border: none;
+	padding: 10px;
+	width: auto;
+	background: cornflowerblue;
+	color: azure;
+	border-radius: 15px;
+	height:auto;
+}
+
+.submitButton:FOCUS {
+	
+	outline:none;
+}
+.submitButton:hover {
+	border: 1px solid cornflowerblue;
+	background: azure;
+	color: cornflowerblue;
+}

@@ -1,0 +1,39 @@
+@CHARSET "ISO-8859-1";
+
+.header
+{
+	height: 150px;
+	background: orange;
+}
+
+.footer
+{
+	height: 80px;
+	background: orange;
+	margin-top:180px;
+}
+
+.logo
+{
+	margin-left:270px;
+	margin-top: 50px;
+	font-size: 40px;
+	font-family: fantasy;
+	color: olive;
+	position: absolute;
+	
+}
+body
+{
+	background: #aaaaaa;
+}
+.body
+{
+	margin-left:300px;
+	font-family: sans-serif;
+	font-weight: bolder;
+}
+table,th,td,tr
+{
+	padding: 10px;
+}

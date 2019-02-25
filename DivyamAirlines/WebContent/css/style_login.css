@@ -1,0 +1,80 @@
+div#header{
+    height:150px;
+    background: teal;
+}
+
+div#footer{
+    height:70px;
+    background: teal;
+    margin-top:100px;
+}
+
+div#desc{
+    float:left;
+    position: relative;
+    margin-top:90px;
+    margin-left:15px;
+    width:50%;
+    font-family: arial;
+    text-align: justify;
+}
+
+div#login{
+    float:right;
+    position: relative;
+    margin-top:90px;
+    width:40%;
+    text-align: center;
+}
+
+table,tr,td{
+    padding: 10px;
+    text-align: center;
+    font-family: arial;
+}
+
+input#submit{
+    position: absolute;
+    margin-left: -10px;
+    border:1px solid darkgreen;
+    padding:10px;
+    width:100px;
+    background:azure;
+    color:darkgreen;
+}
+
+input#submit:hover{
+    position: absolute;
+    margin-left: -10px;
+    border:1px solid azure;
+    padding:10px;
+    width:100px;
+    background:darkseagreen;
+    color:azure;
+}
+
+input#signup{
+    position: absolute;
+    margin-left: -15px;
+    border:1px solid cornflowerblue;
+    padding:10px;
+    width:100px;
+    background:azure;
+    color:cornflowerblue;
+}
+
+input#signup:hover{
+    position: absolute;
+    margin-left: -15px;
+    border:1px solid azure;
+    padding:10px;
+    width:100px;
+    background:cornflowerblue;
+    color:azure;
+}
+
+input.text{
+    border-top: none;
+    border-left:none;
+    border-right:none;
+}
